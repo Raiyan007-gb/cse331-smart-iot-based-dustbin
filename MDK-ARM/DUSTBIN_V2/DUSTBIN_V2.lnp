@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"dustbin_v2\startup_stm32f103xb.o"
+"dustbin_v2\main.o"
+"dustbin_v2\stm32f1xx_it.o"
+"dustbin_v2\stm32f1xx_hal_msp.o"
+"dustbin_v2\stm32f1xx_hal_gpio_ex.o"
+"dustbin_v2\stm32f1xx_hal_i2c.o"
+"dustbin_v2\stm32f1xx_hal.o"
+"dustbin_v2\stm32f1xx_hal_rcc.o"
+"dustbin_v2\stm32f1xx_hal_rcc_ex.o"
+"dustbin_v2\stm32f1xx_hal_gpio.o"
+"dustbin_v2\stm32f1xx_hal_dma.o"
+"dustbin_v2\stm32f1xx_hal_cortex.o"
+"dustbin_v2\stm32f1xx_hal_pwr.o"
+"dustbin_v2\stm32f1xx_hal_flash.o"
+"dustbin_v2\stm32f1xx_hal_flash_ex.o"
+"dustbin_v2\stm32f1xx_hal_exti.o"
+"dustbin_v2\stm32f1xx_hal_tim.o"
+"dustbin_v2\stm32f1xx_hal_tim_ex.o"
+"dustbin_v2\system_stm32f1xx.o"
+"dustbin_v2\fonts.o"
+"dustbin_v2\ssd1306.o"
+--strict --scatter "DUSTBIN_V2\DUSTBIN_V2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DUSTBIN_V2.map" -o DUSTBIN_V2\DUSTBIN_V2.axf
